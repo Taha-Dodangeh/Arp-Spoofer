@@ -156,7 +156,7 @@ sudo pacman -S python-scapy iptables
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/arp-spoofer.git
+git clone https://github.com/Taha-Dodangeh/arp-spoofer.git
 cd arp-spoofer
 ```
 
