@@ -17,7 +17,7 @@ The project was built as a hands-on way to understand how ARP poisoning works at
 * 🕸️ **ARP cache poisoning**
 
   * Sends forged ARP replies to selected hosts.
-  * Makes targets associate the attacker's MAC address with the gateway.
+  * Makes targets associate the gateway's IP address with the attacker's MAC address.
   * Also poisons the gateway's ARP cache for the selected targets.
 
 * 🔀 **IP forwarding**
@@ -83,7 +83,7 @@ The local machine and gateway are excluded from the normal target list.
 The program periodically sends forged ARP replies:
 
 ```text
-Target → "The gateway is at my MAC address"
+Target  → "The gateway is at my MAC address"
 
 Gateway → "The target is at my MAC address"
 ```
@@ -156,8 +156,8 @@ sudo pacman -S python-scapy iptables
 Clone the repository:
 
 ```bash
-git clone https://github.com/Taha-Dodangeh/arp-spoofer.git
-cd arp-spoofer
+git clone https://github.com/Taha-Dodangeh/Arp-Spoofer.git
+cd Arp-Spoofer
 ```
 
 No additional build step is required.
@@ -246,8 +246,7 @@ sudo arp-scan --interface=<interface> --localnet
 arp-spoofer/
 ├── arp_spoofer.py
 ├── README.md
-└── images/
-    └── ...
+└── LICENSE
 ```
 
 ## Learning Goals
@@ -279,4 +278,3 @@ This project is intended for:
 ## License
 
 Use responsibly and only in environments where you have permission to perform network security testing.
-
